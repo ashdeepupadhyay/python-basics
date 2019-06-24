@@ -1,17 +1,7 @@
-#translator single line comments
-'''
-multiple line comments
-'''
-def tranlate(phrase):
-    translation = ""
-    for letter in phrase:
-        if letter.lower() in "aeiou":
-            if letter.isupper():
-                translation = translation + "G"
-            else:
-                translation = translation + "g"
-        else:
-            translation = translation + letter
-    return translation
+employee_file=open("employee.txt","r")
+for employee in employee_file.readlines():
+    print(employee)
+employee_file.close()
 
-print(tranlate(input("Enter a phrase")))
+
+
