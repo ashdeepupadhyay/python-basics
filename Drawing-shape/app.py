@@ -1,3 +1,4 @@
-name = input("Enter your name :")
-age = input ("Enter youe age")
-print ("Hello "+name+"!"+"you are"+age)
+num1 = input("Enter a number : ")
+num2 = input("Enter a number : ")
+result = float(num1) + float(num2)
+print (result)
