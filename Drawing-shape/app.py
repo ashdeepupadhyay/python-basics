@@ -1,16 +1,7 @@
-secret_word = "giraffe"
-guess = ""
-guess_count = 0
-guess_limit = 3
-out_of_guesses = False
-while guess != secret_word and not(out_of_guesses):
-    if guess_count<guess_limit:
-        guess = input("Enter  guess: ")
-        guess_count+=1
-    else:
-        out_of_guesses = True
+def raise_to_power(base_num,pow_num):
+    result=1
+    for index in range(pow_num):
+        result = result * base_num
+    return  result
 
-if out_of_guesses:
-    print("Out of Guesses,You Lose!")
-else:
-    print("You Win")
+print(raise_to_power(3,4))
