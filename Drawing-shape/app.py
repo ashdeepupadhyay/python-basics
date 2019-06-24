@@ -1,9 +1,8 @@
-employee_file=open("employee.txt","a")
-#for employee in employee_file.readlines():
-#    print(employee)
+import usefulltools
 
-employee_file.write("dart - HR\n")
-employee_file.close()
+print(usefulltools.roll_dice(10))
+
+
 
 
 
