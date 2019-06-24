@@ -1,15 +1,19 @@
-num1 = float(input("Enter first number :"))
-op = input("Enter a operator")
-num2 = float(input("Enter second number"))
+monthConversions={
+    "Jan":"January",
+    "Feb":"February",
+    "Mar":"March",
+    "Apr":"April",
+    "May":"May",
+    "Jun":"June",
+    "Jul":"July",
+    "Aug":"August",
+    "Sept":"September",
+    "Oct":"October",
+    "Nov":"November",
+    "Dec":"December"
+}
 
-if op == "+":
-    print (num1+num2)
-elif op == "-":
-    print(num1-num2)
-elif op == "/":
-    print(num1/num2)
-elif op == "*":
-    print(num1*num2)
-else:
-    print("Invalid operations")
+print(monthConversions['Mar'])
+print(monthConversions.get('Dec'))
+print(monthConversions.get('lec','Not a valid key'))
 
