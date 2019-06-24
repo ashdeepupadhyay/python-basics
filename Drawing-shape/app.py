@@ -1,7 +1,15 @@
-color = input("Enter a Color :")
-plural_noun = input("Enter a plural noun")
-celebrity = input("Enter a Celebrity name")
+num1 = float(input("Enter first number :"))
+op = input("Enter a operator")
+num2 = float(input("Enter second number"))
 
-print("Roses are "+color)
-print(plural_noun+" are blue")
-print("I love "+celebrity)
+if op == "+":
+    print (num1+num2)
+elif op == "-":
+    print(num1-num2)
+elif op == "/":
+    print(num1/num2)
+elif op == "*":
+    print(num1*num2)
+else:
+    print("Invalid operations")
+
